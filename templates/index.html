@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food & Restaurant Chatbot</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="chat-container">
+<div class="header">
+<div class="icon">🍴</div>
+<h1>Food & Restaurant Chatbot</h1>
+<p>Your food and restaurant information assistant</p>
+</div>
+<div id="chat-box" class="chat-box">
+<div class="message bot"><strong>Food Bot</strong><br>Hello! 👋 I can help with dishes, restaurants, menus, vegetarian options, desserts and more.</div>
+</div>
+<form id="chat-form" class="input-area">
+<input id="message" type="text" placeholder="Ask a food or restaurant question..." autocomplete="off" required>
+<button type="submit">Send</button>
+</form>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
